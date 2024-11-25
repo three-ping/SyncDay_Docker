@@ -10,17 +10,21 @@
 ```bash
 git clone [your-repo-url]
 cd elasticsearch
-
+```
 2. 실행
 # Linux/Mac
+```bash
 chmod +x scripts/*.sh
 ./scripts/setup.sh
-
+```
 # Windows
+```bash
 docker-compose up -d
+```
 # ES 시작 대기 (약 30초)
+```bash
 curl -X PUT "localhost:9200/user_search" -H "Content-Type: application/json" -d @config/elasticsearch/nori-analyzer.json
-
+```
 3. 확인
 Elasticsearch: http://localhost:9200
 Kibana: http://localhost:5601
