@@ -40,7 +40,7 @@ docker-compose up -d
 sh ./scripts/init-index.sh
 ```
 
-3. 설치 확인
+# 3. 설치 확인
 ```bash
 # Elasticsearch 확인
 curl http://localhost:9200
@@ -48,6 +48,6 @@ curl http://localhost:9200
 # 생성된 인덱스 확인
 curl 'http://localhost:9200/_cat/indices?v'
 ```
-4. 접속 주소
+# 4. 접속 주소
 Elasticsearch: http://localhost:9200
 Kibana: http://localhost:5601
