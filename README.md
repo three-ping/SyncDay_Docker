@@ -19,7 +19,7 @@ chmod +x scripts/*.sh
 # Windows
 docker-compose up -d
 # ES 시작 대기 (약 30초)
-curl -X PUT "localhost:9200/user_search" -H "Content-Type: application/json" -d @config/elasticsearch/nori-analyzer.json
+./scripts/init-index.sh
 
 3. 확인
 Elasticsearch: http://localhost:9200
